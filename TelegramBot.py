@@ -84,7 +84,7 @@ def read_json(filename = "contactlist.json"):
 
 write_json({})
 # app.run(debug=True)
-app.run(host='0.0.0.0', port=int(os.environ('PORT', 5000)))
+app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
 # data = get_all_updates()
 # lastUpdate = get_last_update(data)
 # sendMessage = send_messae(get_chat_id(lastUpdate), "khoobam!", True)
